@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Random Password Generator</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Google Font **Poppins** -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Google Icons -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+
+		<!-- Fontawesome File -->
+		<link rel="stylesheet" href="Font_Awesome/css/all.css" />
+
+		<!-- The Css File -->
+		<link rel="stylesheet" href="css/main.css" />
+		<!-- The JavaScript File -->
+		<script src="javascript/main.js" defer></script>
+	</head>
+
+	<body>
+		<div class="form-container">
+			<div class="header padd-lef-rig">
+				<h2>Password Generate</h2>
+			</div>
+			<div class="section padd-lef-rig">
+				<div class="inp">
+					<input
+						type="text"
+						name="inp"
+						id="mainInp"
+						placeholder="Random Password"
+					/>
+					<div class="icons">
+						<span class="material-symbols-outlined active"> copy_all </span>
+						<span class="material-symbols-outlined green"> done </span>
+					</div>
+					<div class="sec-sudo-elem"></div>
+					<div class="sudo-elem"></div>
+				</div>
+				<div class="pass-len">
+					<div class="text">
+						<p class="pass-label">password length</p>
+						<p class="counter">6</p>
+					</div>
+					<input type="range" id="inpRange" min="0" max="30" value="6" />
+				</div>
+				<div class="pass-check">
+					<p class="para-setting">password settings</p>
+					<div class="check-boxs">
+						<div class="lower che">
+							<input data-count="low" type="checkbox" name="" id="low-inp" />
+							<label for="low-inp">Lowercase (a-z)</label>
+						</div>
+						<div class="upper che">
+							<input data-count="uppe" type="checkbox" name="" id="upp-inp" />
+							<label for="upp-inp">Uppercase (A-Z)</label>
+						</div>
+						<div class="number che">
+							<input data-count="num" type="checkbox" name="" id="num-inp" />
+							<label for="num-inp">Numbers (0-9)</label>
+						</div>
+						<div class="symbol che">
+							<input data-count="sym" type="checkbox" name="" id="sym-inp" />
+							<label for="sym-inp">Symbols (!-$@+?)</label>
+						</div>
+						<!-- <div class="no-dupli che">
+							<input type="checkbox" name="" id="dupli-inp" />
+							<label for="dupli-inp">Exclude Duplicate</label>
+						</div> -->
+						<div class="no-space che">
+							<input data-count="spa" type="checkbox" name="" id="space-inp" />
+							<label for="space-inp">Include Spaces</label>
+						</div>
+					</div>
+				</div>
+				<button class="gene-btn">generate Password</button>
+			</div>
+		</div>
+	</body>
+</html>

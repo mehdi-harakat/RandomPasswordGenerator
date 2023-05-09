@@ -1,0 +1,192 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background-color: #4285f4;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-container {
+	background-color: #fff;
+	width: 360px;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.padd-lef-rig {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.form-container .header {
+	padding-top: 16px;
+	padding-bottom: 16px;
+
+	margin-bottom: 20px;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+.form-container .header h2 {
+	font-size: 18px;
+}
+
+.form-container .inp {
+	width: 100%;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.form-container .inp #mainInp {
+	width: 100%;
+	height: 40px;
+	outline: none;
+	border: 1px solid #999;
+	border-radius: 4px;
+	padding-left: 15px;
+}
+
+.form-container .inp #mainInp:focus {
+	border-color: #4285f4;
+}
+
+.form-container .inp .icons span {
+	position: absolute;
+	padding: 6px 12px 6px 6px;
+	top: 50%;
+	right: 2px;
+	transform: translateY(-50%);
+	color: #666;
+	cursor: pointer;
+	background-color: #fff;
+	user-select: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.form-container .inp .icons span.green {
+	color: #48c9b0;
+}
+
+.form-container .inp .icons span.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.form-container .inp .sec-sudo-elem {
+	width: 100%;
+	height: 3px;
+	border-radius: 3px;
+	background-color: #eee;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+}
+.form-container .inp .sudo-elem {
+	width: 50%;
+	height: 3px;
+	border-radius: 3px;
+	background-color: #4285f4;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	transition: background-color 0.3s ease-in-out, width 0.2s ease-in-out;
+}
+
+.form-container .section .pass-len {
+	margin-bottom: 15px;
+}
+
+.form-container .section .pass-len .text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-container .section .pass-len .text .pass-label {
+	text-transform: capitalize;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.form-container .section .pass-len #inpRange {
+	appearance: none;
+	width: 100%;
+	height: 5px;
+	border-radius: 30px;
+	background-color: #eee;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.form-container .section .pass-len #inpRange:hover {
+	background-color: #d3d3d3;
+}
+
+.form-container .section .pass-len #inpRange::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 15px; /* Set a specific slider handle width */
+	height: 15px; /* Slider handle height */
+	border-radius: 50%;
+	background: #4285f4; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+}
+
+.form-container .section .pass-check {
+	margin-bottom: 16px;
+}
+
+.form-container .section .pass-check .para-setting {
+	margin-bottom: 10px;
+	text-transform: capitalize;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.form-container .section .pass-check .check-boxs {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(calc(50% - 10px), 1fr));
+	gap: 10px;
+}
+
+.form-container .section .pass-check .che {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 6px;
+}
+
+.form-container .section .pass-check label {
+	font-size: 12px;
+}
+
+.form-container .section .gene-btn {
+	width: 100%;
+	height: 45px;
+	margin-bottom: 25px;
+	outline: none;
+	border: none;
+	background-color: #4285f4;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.form-container .section .gene-btn:hover {
+	background-color: #639dfa;
+}
